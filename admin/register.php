@@ -1,4 +1,6 @@
-<?php include_once('header.php'); 
+<?php 
+$access = 1;
+include_once('header.php'); 
 
 if(!isset($_SESSION['admin'])){
     header("location: login.php");

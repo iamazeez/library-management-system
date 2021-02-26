@@ -1,4 +1,10 @@
-<?php include_once('header.php'); ?>
+<?php 
+$access = 1;
+include_once('header.php'); 
+if(!isset($_SESSION['admin'])){
+    header("location: login.php");
+  }
+?>
 
 <div class="container mx-auto p-8 flex">
     <div class="w-8/12 mx-auto">

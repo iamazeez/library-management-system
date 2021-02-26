@@ -1,4 +1,9 @@
-<?php include_once('header.php'); ?>
+<?php 
+$access = 1;
+include_once('header.php');
+if(!isset($_SESSION['admin'])){
+    header("location: login.php");
+  } ?>
 <div class="container w-full md:w-10/12 xl:w-10/12 mt-12 mb-8  mx-auto px-2">
 			<!--Card-->
 			 <div id='recipients' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">

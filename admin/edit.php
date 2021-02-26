@@ -1,7 +1,12 @@
 <?php
+if(!isset($_SESSION['admin'])){
+    header("location: login.php");
+  }
 if(!isset($_GET['id']) && !isset($_POST['id'])){
       header('location:index.php');
 }
+
+$access = 1;
 ?>
 
 <?php include_once('header.php'); ?>

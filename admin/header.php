@@ -1,5 +1,7 @@
 <?php 
-
+if(!isset($access)){
+    header('location:index.php');
+}
 include_once('adminApp.php');
 include_once('conn.php');
 
